@@ -3,7 +3,7 @@ public class Main {
 	public static void main(String[] args) {
 		int arr[]= new int [5] ;
 		Scanner sc=new Scanner(System.in);
-		int e=0,o=0;
+		int p=0,n=0;
 		System.out.println("enter the number of array ");
 		for(int i=0;i<arr.length;i++)
 		{
@@ -11,16 +11,18 @@ public class Main {
 		}
 		for(int i=0;i<arr.length;i++)
 		{
-			if(arr[i]%2==0)
+			if(arr[i]>0)
 			{
-			 e++;	
+				p++;
+				
 			}
-			if(arr[i]%2!=0)
+			if(arr[i]<0)
 			{
-				o++;System.out.println("total even number=>"+e);
+				n++;
+					
 			}
 		}
-		System.out.println("total even number=>"+e);
-		System.out.println("total odd number=>"+o);
+		System.out.println("postive number =>"+p);
+		System.out.println("negative  number =>"+n);
 	}
 }
